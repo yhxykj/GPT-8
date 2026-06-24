@@ -1,0 +1,119 @@
+PODS:
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
+  - AFNetworking/NSURLSession (4.0.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/UIKit (4.0.1):
+    - AFNetworking/NSURLSession
+  - Alamofire (5.8.1)
+  - AlamofireImage (4.3.0):
+    - Alamofire (~> 5.8)
+  - IQKeyboardManager (6.5.17)
+  - MarkdownKit (1.7.1)
+  - MJRefresh (3.7.6)
+  - SDAutoLayout (2.1.9)
+  - SDWebImage (5.19.0):
+    - SDWebImage/Core (= 5.19.0)
+  - SDWebImage/Core (5.19.0)
+  - SKPhotoBrowser (7.1.0)
+  - SnapKit (5.7.1)
+  - SocketRocket (0.7.0)
+  - SSKeychain (1.4.1)
+  - SVProgressHUD (2.3.1):
+    - SVProgressHUD/Core (= 2.3.1)
+  - SVProgressHUD/Core (2.3.1)
+  - YBImageBrowser (3.0.9):
+    - YBImageBrowser/Core (= 3.0.9)
+  - YBImageBrowser/Core (3.0.9):
+    - SDWebImage (>= 5.0.0)
+    - YYImage
+  - YYCategories (1.0.4):
+    - YYCategories/no-arc (= 1.0.4)
+  - YYCategories/no-arc (1.0.4)
+  - YYImage (1.0.4):
+    - YYImage/Core (= 1.0.4)
+  - YYImage/Core (1.0.4)
+  - YYText (1.0.7)
+  - ZKProgressHUD (5.1.2)
+
+DEPENDENCIES:
+  - AFNetworking
+  - Alamofire
+  - AlamofireImage
+  - IQKeyboardManager
+  - MarkdownKit
+  - MJRefresh
+  - SDAutoLayout (~> 2.1.7)
+  - SDWebImage
+  - SKPhotoBrowser
+  - SnapKit
+  - SocketRocket
+  - SSKeychain
+  - SVProgressHUD
+  - YBImageBrowser
+  - YYCategories
+  - YYImage (from `https://github.com/QiuYeHong90/YYImage.git`)
+  - YYText
+  - ZKProgressHUD
+
+SPEC REPOS:
+  trunk:
+    - AFNetworking
+    - Alamofire
+    - AlamofireImage
+    - IQKeyboardManager
+    - MarkdownKit
+    - MJRefresh
+    - SDAutoLayout
+    - SDWebImage
+    - SKPhotoBrowser
+    - SnapKit
+    - SocketRocket
+    - SSKeychain
+    - SVProgressHUD
+    - YBImageBrowser
+    - YYCategories
+    - YYText
+    - ZKProgressHUD
+
+EXTERNAL SOURCES:
+  YYImage:
+    :git: https://github.com/QiuYeHong90/YYImage.git
+
+CHECKOUT OPTIONS:
+  YYImage:
+    :commit: 4164acb76e8979c0612530bd874e099a1fa51e9d
+    :git: https://github.com/QiuYeHong90/YYImage.git
+
+SPEC CHECKSUMS:
+  AFNetworking: 3bd23d814e976cd148d7d44c3ab78017b744cd58
+  Alamofire: 3ca42e259043ee0dc5c0cdd76c4bc568b8e42af7
+  AlamofireImage: 843953fa97bee5f561cf05d83abd759e590b068d
+  IQKeyboardManager: 904d013844bbae0abe073f015487bfebe5476335
+  MarkdownKit: 0b15195c63cf3e39387949c4bdeccde0055e252a
+  MJRefresh: 2fe7fb43a5167ceda20bb7e63f130c04fd1814a5
+  SDAutoLayout: 6b6f4db0d009dfc46cef14ef710dbb164e86616c
+  SDWebImage: 981fd7e860af070920f249fd092420006014c3eb
+  SKPhotoBrowser: cd95b95a6f352fc2a50992721299f75ead77f9ab
+  SnapKit: d612e99e678a2d3b95bf60b0705ed0a35c03484a
+  SocketRocket: abac6f5de4d4d62d24e11868d7a2f427e0ef940d
+  SSKeychain: 55cc80f66f5c73da827e3077f02e43528897db41
+  SVProgressHUD: 4837c74bdfe2e51e8821c397825996a8d7de6e22
+  YBImageBrowser: 7ecc8bf33ffa5f3b94c397c29b4f3638dd37f527
+  YYCategories: 6bcd4314c6661a561410dce4a793379ebd306abd
+  YYImage: 20ec986d18a8d0ad421619d166a9e628097e2433
+  YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
+  ZKProgressHUD: af9e9929c6935587da382bf23d31b4e995b8c229
+
+PODFILE CHECKSUM: 9b6cbb61c523d666b06700969e3cb673706c15f1
+
+COCOAPODS: 1.16.2
