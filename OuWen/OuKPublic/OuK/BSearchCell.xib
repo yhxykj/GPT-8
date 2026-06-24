@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="601-Nz-eLq" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="9uY-hl-lje" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Smn-Z3-x5e" customClass="BSearchCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ridgingZhulisearchBpch" translatesAutoresizingMaskIntoConstraints="NO" id="9CZ-DZ-Y5b">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GNV-9F-nzj">
+                        <rect key="frame" x="16" y="577" width="343" height="54"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" image="sureThird"/>
+                        <connections>
+                            <action selector="expandIndexpathClikCharacterBrowserZhuButton:" destination="Smn-Z3-x5e" eventType="touchUpInside" id="Om8-Am-h5Y"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="is1-qw-hcl"/>
+            <constraints>
+                <constraint firstItem="9CZ-DZ-Y5b" firstAttribute="leading" secondItem="Smn-Z3-x5e" secondAttribute="leading" id="qGj-kM-1B2"/>
+                <constraint firstAttribute="bottom" secondItem="9CZ-DZ-Y5b" secondAttribute="bottom" id="qdk-jB-eIK"/>
+                <constraint firstItem="9CZ-DZ-Y5b" firstAttribute="top" secondItem="Smn-Z3-x5e" secondAttribute="top" id="iUt-uZ-q9H"/>
+                <constraint firstAttribute="trailing" secondItem="GNV-9F-nzj" secondAttribute="trailing" constant="15.99" id="TfZ-l2-uhr"/>
+                <constraint firstAttribute="bottom" secondItem="GNV-9F-nzj" secondAttribute="bottom" constant="36.02" id="Kmx-qQ-Xfb"/>
+                <constraint firstAttribute="trailing" secondItem="9CZ-DZ-Y5b" secondAttribute="trailing" id="4Cb-VM-leV"/>
+                <constraint firstItem="GNV-9F-nzj" firstAttribute="leading" secondItem="Smn-Z3-x5e" secondAttribute="leading" constant="15.99" id="05U-oc-HKV"/>
+            </constraints>
+            <size key="customSize" width="350" height="528"/>
+            <connections>
+                <outlet property="tw_bg_image" destination="9CZ-DZ-Y5b" id="oov-KP-a4l"/>
+                <outlet property="tw_next_button" destination="GNV-9F-nzj" id="VDo-8Q-Ryh"/>
+            </connections>
+            <point key="canvasLocation" x="262.59541984732823" y="61.971830985915496"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="sureThird" width="334" height="54"/>
+        <image name="ridgingZhulisearchBpch" width="390" height="844"/>
+    </resources>
+</document>

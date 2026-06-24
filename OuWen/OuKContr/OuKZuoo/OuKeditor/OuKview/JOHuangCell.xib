@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="601-Nz-eLq" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="9uY-hl-lje" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="113" id="B2n-mA-fbV" customClass="JOHuangCell">
+            <rect key="frame" x="0.0" y="0.0" width="354" height="113"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="B2n-mA-fbV" id="V5L-RF-dIG">
+                <rect key="frame" x="0.0" y="0.0" width="354" height="113"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z6Q-kW-mWt">
+                        <rect key="frame" x="36" y="47.666666666666664" width="37.333333333333343" height="17.999999999999993"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shangseHuang" translatesAutoresizingMaskIntoConstraints="NO" id="1Jd-aS-oYp">
+                        <rect key="frame" x="298" y="46.666666666666664" width="20" height="19.999999999999993"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="1Jd-aS-oYp" firstAttribute="centerY" secondItem="V5L-RF-dIG" secondAttribute="centerY" id="QCP-DD-Xk8"/>
+                    <constraint firstAttribute="trailing" secondItem="1Jd-aS-oYp" secondAttribute="trailing" constant="36.01" id="ZM7-xy-B6r"/>
+                    <constraint firstItem="Z6Q-kW-mWt" firstAttribute="leading" secondItem="V5L-RF-dIG" secondAttribute="leading" constant="36.02" id="Mbf-W0-mfT"/>
+                    <constraint firstItem="Z6Q-kW-mWt" firstAttribute="centerY" secondItem="V5L-RF-dIG" secondAttribute="centerY" id="vdE-XL-LEO"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="iWj-lx-zJ8"/>
+            <connections>
+                <outlet property="tw_image" destination="1Jd-aS-oYp" id="MIp-kI-rae"/>
+                <outlet property="tw_name_label" destination="Z6Q-kW-mWt" id="LVB-rp-qcK"/>
+            </connections>
+            <point key="canvasLocation" x="156.92307692307691" y="12.440758293838861"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="shangseHuang" width="20" height="20"/>
+    </resources>
+</document>

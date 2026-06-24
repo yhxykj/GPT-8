@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="601-Nz-eLq" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="9uY-hl-lje" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="9ub-Sl-gUw" customClass="GKPRecorderView">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wey-mZ-kVU">
+                    <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QAg-SM-dSL">
+                    <rect key="frame" x="60" y="247" width="270" height="270"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imageDownDefault_hn" translatesAutoresizingMaskIntoConstraints="NO" id="TZG-fV-iQ9">
+                            <rect key="frame" x="0.0" y="0.0" width="270" height="270"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L8d-OD-W62">
+                            <rect key="frame" x="36" y="197" width="200" height="46"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="46.03" id="i3Z-md-wtu"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <connections>
+                                <action selector="_topSubviewsConstantPath:" destination="9ub-Sl-gUw" eventType="touchUpInside" id="MLJ-za-q4a"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="TZG-fV-iQ9" secondAttribute="bottom" id="Lqv-Ab-czu"/>
+                        <constraint firstAttribute="width" constant="270.02" id="ebD-rw-c4F"/>
+                        <constraint firstAttribute="bottom" secondItem="L8d-OD-W62" secondAttribute="bottom" constant="27.03" id="fe5-II-D96"/>
+                        <constraint firstItem="L8d-OD-W62" firstAttribute="leading" secondItem="QAg-SM-dSL" secondAttribute="leading" constant="36.01" id="WG1-yi-b84"/>
+                        <constraint firstAttribute="trailing" secondItem="L8d-OD-W62" secondAttribute="trailing" constant="33.98" id="KCz-Ti-d8I"/>
+                        <constraint firstItem="TZG-fV-iQ9" firstAttribute="top" secondItem="QAg-SM-dSL" secondAttribute="top" id="mpW-SX-JZ8"/>
+                        <constraint firstItem="TZG-fV-iQ9" firstAttribute="leading" secondItem="QAg-SM-dSL" secondAttribute="leading" id="kTN-gc-g2U"/>
+                        <constraint firstAttribute="trailing" secondItem="TZG-fV-iQ9" secondAttribute="trailing" id="NmU-0r-itJ"/>
+                        <constraint firstAttribute="height" constant="269.99" id="FDa-nX-URK"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="wey-mZ-kVU" secondAttribute="trailing" id="IzF-cT-BtY"/>
+                <constraint firstItem="wey-mZ-kVU" firstAttribute="top" secondItem="9ub-Sl-gUw" secondAttribute="top" id="vCa-xi-kXZ"/>
+                <constraint firstItem="QAg-SM-dSL" firstAttribute="centerY" secondItem="9ub-Sl-gUw" secondAttribute="centerY" constant="-40" id="vwb-Jq-3Bk"/>
+                <constraint firstAttribute="bottom" secondItem="wey-mZ-kVU" secondAttribute="bottom" id="mqd-EM-xpD"/>
+                <constraint firstItem="QAg-SM-dSL" firstAttribute="centerX" secondItem="9ub-Sl-gUw" secondAttribute="centerX" id="bCk-J7-adx"/>
+                <constraint firstItem="wey-mZ-kVU" firstAttribute="leading" secondItem="9ub-Sl-gUw" secondAttribute="leading" id="aK2-Vm-WRJ"/>
+            </constraints>
+            <connections>
+                <outlet property="tw_bigImage" destination="wey-mZ-kVU" id="rGd-3l-ynd"/>
+            </connections>
+            <point key="canvasLocation" x="130.76923076923077" y="-11.374407582938389"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="imageDownDefault_hn" width="270" height="270"/>
+    </resources>
+</document>
