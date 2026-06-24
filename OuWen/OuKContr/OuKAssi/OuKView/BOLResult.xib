@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="601-Nz-eLq" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="9uY-hl-lje" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="9ub-Sl-gUw" customClass="BOLResult">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newassitantsuccessPaint" translatesAutoresizingMaskIntoConstraints="NO" id="Xbf-Zn-i3G">
+                    <rect key="frame" x="88.666666666666686" y="316" width="213" height="212"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="212.96" id="wkl-dw-uot"/>
+                        <constraint firstAttribute="height" constant="212.04" id="JlL-2l-Ilc"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="C3l-yO-FWZ"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstItem="Xbf-Zn-i3G" firstAttribute="centerY" secondItem="9ub-Sl-gUw" secondAttribute="centerY" id="vcS-sR-E5k"/>
+                <constraint firstItem="Xbf-Zn-i3G" firstAttribute="centerX" secondItem="9ub-Sl-gUw" secondAttribute="centerX" id="j4c-md-fAg"/>
+            </constraints>
+            <connections>
+                <outletCollection property="gestureRecognizers" destination="1uQ-Ie-8rF" appends="YES" id="vNs-Nq-vSL"/>
+            </connections>
+            <point key="canvasLocation" x="123" y="232"/>
+        </view>
+        <tapGestureRecognizer id="1uQ-Ie-8rF">
+            <connections>
+                <action selector="quartzFormatCommonResultPowerView:" destination="9ub-Sl-gUw" id="Erg-uc-r3e"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="newassitantsuccessPaint" width="213" height="212"/>
+    </resources>
+</document>

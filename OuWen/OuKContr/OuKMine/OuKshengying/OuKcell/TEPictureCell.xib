@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="601-Nz-eLq" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="9uY-hl-lje" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Smn-Z3-x5e" customClass="TEPictureCell">
+            <rect key="frame" x="0.0" y="0.0" width="189" height="137"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="189" height="137"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J4Z-az-bpE">
+                        <rect key="frame" x="0.0" y="0.0" width="189" height="137"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wd_sy_voice_s" translatesAutoresizingMaskIntoConstraints="NO" id="AmF-7j-NYY">
+                                <rect key="frame" x="57" y="0.0" width="75" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="74.99" id="F7F-aX-JHL"/>
+                                    <constraint firstAttribute="width" constant="75.01" id="znL-kI-vVb"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="御姐女声" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TQK-b0-zYo">
+                                <rect key="frame" x="61.999999999999993" y="83" width="65.333333333333314" height="19.333333333333329"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                <color key="textColor" red="0.12941176470588234" green="0.67843137254901964" blue="0.36862745098039218" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="AmF-7j-NYY" firstAttribute="top" secondItem="J4Z-az-bpE" secondAttribute="top" id="9pQ-Mp-Boa"/>
+                            <constraint firstItem="AmF-7j-NYY" firstAttribute="centerX" secondItem="J4Z-az-bpE" secondAttribute="centerX" id="UpL-nt-u78"/>
+                            <constraint firstItem="TQK-b0-zYo" firstAttribute="top" secondItem="AmF-7j-NYY" secondAttribute="bottom" constant="8.01" id="EZL-0w-fFb"/>
+                            <constraint firstItem="TQK-b0-zYo" firstAttribute="centerX" secondItem="J4Z-az-bpE" secondAttribute="centerX" id="OL8-da-lYA"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="is1-qw-hcl"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="J4Z-az-bpE" secondAttribute="bottom" id="XKc-cc-Ef1"/>
+                <constraint firstAttribute="trailing" secondItem="J4Z-az-bpE" secondAttribute="trailing" id="WHf-4r-ZPl"/>
+                <constraint firstItem="J4Z-az-bpE" firstAttribute="top" secondItem="Smn-Z3-x5e" secondAttribute="top" id="F23-oF-UHU"/>
+                <constraint firstItem="J4Z-az-bpE" firstAttribute="leading" secondItem="Smn-Z3-x5e" secondAttribute="leading" id="fdW-jW-ZOd"/>
+            </constraints>
+            <size key="customSize" width="189" height="137"/>
+            <connections>
+                <outlet property="cell_bg_view" destination="J4Z-az-bpE" id="ADU-PB-SLk"/>
+                <outlet property="cell_name_label" destination="TQK-b0-zYo" id="qUP-co-JgS"/>
+                <outlet property="cell_voice_image" destination="AmF-7j-NYY" id="j9Y-fy-GIy"/>
+            </connections>
+            <point key="canvasLocation" x="237.69230769230768" y="18.838862559241704"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="wd_sy_voice_s" width="15" height="20"/>
+    </resources>
+</document>

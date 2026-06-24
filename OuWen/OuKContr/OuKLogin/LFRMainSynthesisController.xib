@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="601-Nz-eLq" userLabel="File's Owner" customClass="LFRMainSynthesisController">
+            <connections>
+                <outlet property="view" destination="CtJ-Cp-eeH" id="J7p-tn-nIX"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="9uY-hl-lje" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="CtJ-Cp-eeH">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bianEdit" translatesAutoresizingMaskIntoConstraints="NO" id="d0J-5z-RGV">
+                    <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jEF-f1-YtE">
+                    <rect key="frame" x="31" y="447" width="328" height="54"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="nextPeechConfirm"/>
+                    <connections>
+                        <action selector="fopenZhangshuObjectConnectedCoreSeek:" destination="601-Nz-eLq" eventType="touchUpInside" id="e8r-Zq-Z9E"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xcK-12-wn9">
+                    <rect key="frame" x="31" y="533" width="328" height="54"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="historyCenter"/>
+                    <connections>
+                        <action selector="httpButtonDao:" destination="601-Nz-eLq" eventType="touchUpInside" id="hOm-tX-cYj"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="IeM-LW-uug"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="IeM-LW-uug" firstAttribute="trailing" secondItem="d0J-5z-RGV" secondAttribute="trailing" id="HX5-cB-b3M"/>
+                <constraint firstItem="jEF-f1-YtE" firstAttribute="centerX" secondItem="CtJ-Cp-eeH" secondAttribute="centerX" id="5nO-Gd-qcB"/>
+                <constraint firstItem="xcK-12-wn9" firstAttribute="top" secondItem="jEF-f1-YtE" secondAttribute="bottom" constant="31.98" id="qGc-y9-Wd0"/>
+                <constraint firstItem="d0J-5z-RGV" firstAttribute="leading" secondItem="IeM-LW-uug" secondAttribute="leading" id="UcX-Kf-l2E"/>
+                <constraint firstItem="jEF-f1-YtE" firstAttribute="top" secondItem="IeM-LW-uug" secondAttribute="top" constant="400.01" id="rLu-62-7Tt"/>
+                <constraint firstItem="xcK-12-wn9" firstAttribute="centerX" secondItem="CtJ-Cp-eeH" secondAttribute="centerX" id="u6f-gH-6V9"/>
+                <constraint firstAttribute="bottom" secondItem="d0J-5z-RGV" secondAttribute="bottom" id="5nW-I6-LJt"/>
+                <constraint firstItem="d0J-5z-RGV" firstAttribute="top" secondItem="CtJ-Cp-eeH" secondAttribute="top" id="oU0-Fg-5AQ"/>
+            </constraints>
+            <point key="canvasLocation" x="81" y="-11"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="nextPeechConfirm" width="328" height="54"/>
+        <image name="historyCenter" width="328" height="54"/>
+        <image name="bianEdit" width="390" height="844"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

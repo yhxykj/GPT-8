@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="601-Nz-eLq" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="9uY-hl-lje" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Smn-Z3-x5e" customClass="EPTBianCell">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="169"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="150" height="169"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fg_zntj" translatesAutoresizingMaskIntoConstraints="NO" id="0T4-Sy-fKm">
+                        <rect key="frame" x="0.0" y="0.0" width="150" height="83"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="83.01" id="iMm-id-Tjo"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ElB-SF-iON">
+                        <rect key="frame" x="5" y="87" width="140" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16.98" id="K3p-Uz-8m0"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="is1-qw-hcl"/>
+            <constraints>
+                <constraint firstItem="0T4-Sy-fKm" firstAttribute="leading" secondItem="Smn-Z3-x5e" secondAttribute="leading" id="cIi-8w-DK2"/>
+                <constraint firstItem="0T4-Sy-fKm" firstAttribute="top" secondItem="Smn-Z3-x5e" secondAttribute="top" id="w5b-py-1Ge"/>
+                <constraint firstAttribute="trailing" secondItem="ElB-SF-iON" secondAttribute="trailing" constant="4.97" id="0D0-ii-65k"/>
+                <constraint firstItem="ElB-SF-iON" firstAttribute="top" secondItem="0T4-Sy-fKm" secondAttribute="bottom" constant="3.99" id="E44-HW-qYT"/>
+                <constraint firstItem="ElB-SF-iON" firstAttribute="leading" secondItem="Smn-Z3-x5e" secondAttribute="leading" constant="5.04" id="EGM-qp-Jvy"/>
+                <constraint firstAttribute="trailing" secondItem="0T4-Sy-fKm" secondAttribute="trailing" id="2yq-Ou-WBx"/>
+            </constraints>
+            <size key="customSize" width="150" height="169"/>
+            <connections>
+                <outlet property="tw_icon_image" destination="0T4-Sy-fKm" id="8bD-Mv-yOK"/>
+                <outlet property="tw_name_label" destination="ElB-SF-iON" id="d72-IA-T7H"/>
+            </connections>
+            <point key="canvasLocation" x="207.69230769230768" y="30.213270142180093"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="fg_zntj" width="62" height="61"/>
+    </resources>
+</document>

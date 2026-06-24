@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="601-Nz-eLq" userLabel="File's Owner" customClass="GTPeechResultController">
+            <connections>
+                <outlet property="scrollView" destination="FgC-Pn-svf" id="O3H-Y8-TY7"/>
+                <outlet property="photoLobal" destination="1rA-u6-rvk" id="GZp-Hg-8ut"/>
+                <outlet property="view" destination="CtJ-Cp-eeH" id="J7p-tn-nIX"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="9uY-hl-lje" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="CtJ-Cp-eeH">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FgC-Pn-svf">
+                    <rect key="frame" x="0.0" y="114" width="390" height="696"/>
+                </scrollView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8lR-Td-3P0">
+                    <rect key="frame" x="0.0" y="58" width="390" height="56"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="accessFourDefault_s" translatesAutoresizingMaskIntoConstraints="NO" id="1rA-u6-rvk">
+                            <rect key="frame" x="15" y="0.0" width="360" height="56"/>
+                        </imageView>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I9n-7v-UsT">
+                            <rect key="frame" x="15" y="0.0" width="180" height="56"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <connections>
+                                <action selector="launchFailedGlobalRegularPlayListening:" destination="601-Nz-eLq" eventType="touchUpInside" id="iQZ-hP-lfq"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vqt-Md-2OV">
+                            <rect key="frame" x="195" y="0.0" width="180" height="56"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <connections>
+                                <action selector="launchFailedGlobalRegularPlayListening:" destination="601-Nz-eLq" eventType="touchUpInside" id="8pM-Cx-0dn"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="1rA-u6-rvk" secondAttribute="bottom" id="T2V-6s-EWP"/>
+                        <constraint firstItem="vqt-Md-2OV" firstAttribute="leading" secondItem="I9n-7v-UsT" secondAttribute="trailing" id="fvP-Ww-lnT"/>
+                        <constraint firstItem="1rA-u6-rvk" firstAttribute="leading" secondItem="8lR-Td-3P0" secondAttribute="leading" constant="15.03" id="AKJ-ni-THT"/>
+                        <constraint firstAttribute="bottom" secondItem="I9n-7v-UsT" secondAttribute="bottom" id="BmN-Wy-XRK"/>
+                        <constraint firstItem="I9n-7v-UsT" firstAttribute="top" secondItem="8lR-Td-3P0" secondAttribute="top" id="jHG-hY-y9K"/>
+                        <constraint firstAttribute="height" constant="55.99" id="Zbe-zZ-NHG"/>
+                        <constraint firstAttribute="trailing" secondItem="1rA-u6-rvk" secondAttribute="trailing" constant="15.05" id="CDX-wK-FSH"/>
+                        <constraint firstItem="vqt-Md-2OV" firstAttribute="width" secondItem="I9n-7v-UsT" secondAttribute="width" id="m1n-0n-a7L"/>
+                        <constraint firstItem="1rA-u6-rvk" firstAttribute="top" secondItem="8lR-Td-3P0" secondAttribute="top" id="We4-bY-Pzj"/>
+                        <constraint firstItem="vqt-Md-2OV" firstAttribute="top" secondItem="8lR-Td-3P0" secondAttribute="top" id="R46-2q-XTO"/>
+                        <constraint firstAttribute="trailing" secondItem="vqt-Md-2OV" secondAttribute="trailing" constant="14.96" id="RW9-uH-fRO"/>
+                        <constraint firstItem="I9n-7v-UsT" firstAttribute="leading" secondItem="8lR-Td-3P0" secondAttribute="leading" constant="15.02" id="b3n-cV-okA"/>
+                        <constraint firstAttribute="bottom" secondItem="vqt-Md-2OV" secondAttribute="bottom" id="NbO-cq-ycm"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="d5T-bg-mbv"/>
+            <constraints>
+                <constraint firstItem="d5T-bg-mbv" firstAttribute="bottom" secondItem="FgC-Pn-svf" secondAttribute="bottom" id="73M-p7-DoL"/>
+                <constraint firstItem="8lR-Td-3P0" firstAttribute="leading" secondItem="d5T-bg-mbv" secondAttribute="leading" id="5iK-cQ-T1H"/>
+                <constraint firstItem="FgC-Pn-svf" firstAttribute="leading" secondItem="CtJ-Cp-eeH" secondAttribute="leading" id="OGX-od-50o"/>
+                <constraint firstItem="FgC-Pn-svf" firstAttribute="top" secondItem="8lR-Td-3P0" secondAttribute="bottom" id="GLZ-vC-xoo"/>
+                <constraint firstAttribute="trailing" secondItem="FgC-Pn-svf" secondAttribute="trailing" id="fsc-Eo-gn3"/>
+                <constraint firstItem="d5T-bg-mbv" firstAttribute="trailing" secondItem="8lR-Td-3P0" secondAttribute="trailing" id="zLC-r1-Qom"/>
+                <constraint firstItem="8lR-Td-3P0" firstAttribute="top" secondItem="d5T-bg-mbv" secondAttribute="top" constant="11.05" id="tgG-bU-fuE"/>
+            </constraints>
+            <point key="canvasLocation" x="130.76923076923077" y="-12.085308056872037"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="accessFourDefault_s" width="358" height="56"/>
+    </resources>
+</document>
