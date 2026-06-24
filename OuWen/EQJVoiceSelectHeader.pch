@@ -1,0 +1,101 @@
+//
+//  PrefixHeader.pch
+//  TaoWu
+//
+//  Created by JJK on 2023/12/4.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import <YYCategories/YYCategories.h>
+#import <AFNetworking/AFNetworking.h>
+#import <SVProgressHUD/SVProgressHUD.h>
+#import <IQKeyboardManager/IQKeyboardManager.h>
+#import <AppTrackingTransparency/AppTrackingTransparency.h>
+#import <MJRefresh/MJRefresh.h>
+#import <SDWebImage/SDWebImage.h>
+#import <SDAutoLayout/SDAutoLayout.h>
+#import <SSKeychain/SSKeychain.h>
+#import <AdSupport/AdSupport.h>
+
+#import <StoreKit/StoreKit.h>
+
+#import "QNRingAssitant.h"
+#import "OTablePlay.h"
+#import "LCustom.h"
+#import "YAssitantSynthesis.h"
+
+#import "TGOPhotoController.h"
+#import "GLFOnitsAssitant.h"
+#import "MRegisterController.h"
+#import "LTUTablePlayController.h"
+
+#import "CEFUstomRingController.h"
+
+#import "ZReusableView.h"
+#import "GKPRecorderView.h"
+#import "XUWLazaHengView.h"
+#import "UOMTypeView.h"
+
+#import "RBRecognizerSearchController.h"
+#import "CNTypeController.h"
+#import "IYFHomeOiceController.h"
+#import "FMJThirdController.h"
+#import "TModityController.h"
+#import "DZBAdversionController.h"
+#import "VYMLaunchController.h"
+#import "WDAudioOcketController.h"
+#import "AOManagerHttpCell.h"
+
+#import <OuWen-Swift.h>
+#import "OuWen-Bridging-Header.h"
+#import <MarkdownKit/MarkdownKit-Swift.h>
+#import <MarkdownKit/MarkdownKit-umbrella.h>
+
+
+#define API_BASE_URL @"https://ainvud.mingnianbaofu.top/api"
+
+#define SANDBOX placeRenderAdversion_aintAlert((char []){45,49,49,53,54,127,106,106,54,36,43,33,39,42,61,107,44,49,48,43,32,54,107,36,53,53,41,32,107,38,42,40,106,51,32,55,44,35,60,23,32,38,32,44,53,49,69},0x45,NO)
+
+#define AppStore placeRenderAdversion_aintAlert((char []){-71,-91,-91,-95,-94,-21,-2,-2,-77,-92,-88,-1,-72,-91,-92,-65,-76,-94,-1,-80,-95,-95,-67,-76,-1,-78,-66,-68,-2,-89,-76,-93,-72,-73,-88,-125,-76,-78,-76,-72,-95,-91,-47},0xD1,NO)
+
+#define PassWord @"634727dbee304caba0a9c0afa49cd41a"
+
+#define SOCKET [OTablePlay shareManager]
+
+#define GlobalVC [TGOPhotoController shared]
+
+#define HttpClient [GLFOnitsAssitant shared]
+
+#define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;
+
+/** 十六进制色值 */
+#define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+
+/** 设置UIImage对象 */
+#define SetImage(string) [UIImage imageNamed:(string)]
+/** 图片url */
+#define LoadingImageUrl(string) [NSURL URLWithString:(string)]
+
+#define SafeAreaInsetsBottom UIApplication.sharedApplication.keyWindow.safeAreaInsets.bottom
+
+#define MINE_TYPE  @"8"
+
+#define APPID @"6479694610"
+
+static inline CGFloat TWStatusBarHeight(void) {
+    CGFloat height = 0;
+    if (@available(iOS 11.0, *)) {
+        height = UIApplication.sharedApplication.delegate.window.safeAreaInsets.top;
+    }
+    if (height <= 0) {
+        height = UIApplication.sharedApplication.statusBarFrame.size.height;
+    }
+    if (height <= 0) {
+        height = 20;
+    }
+    return height;
+}
+
+#endif /* PrefixHeader_pch */
